@@ -14,14 +14,22 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: seagreen;
+    background: url("assets/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper
 {
     width: 420px;
-    background: purple;
     color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(241, 239, 239, 0.20);
+    background: linear-gradient(226deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.12) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(12px);
 }
 
 .wrapper h1
@@ -64,4 +72,64 @@ body
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+}
+
+.wrapper .forget
+{
+    display: flex;
+    justify-content: right;
+    font-size: 14.5px;
+    margin: -20px 10px 25px;
+}
+
+.forget label input
+{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.forget a
+{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+
+.forget a:hover
+{
+    color: #fff;
+}
+
+.wrapper .btn
+{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link
+{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a 
+{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover
+{
+    color: #fff;
 }
